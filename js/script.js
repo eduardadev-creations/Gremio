@@ -28,7 +28,11 @@ function loginAluno() {
 
     // Sucesso
     console.log("Aluno autenticado:", { nome, matricula, curso, serie });
+<<<<<<< HEAD
     alert('Olá, ${nome}! Login de Aluno realizado com sucesso.');
+=======
+    alert("Olá, ${nome}! Login de Aluno realizado com sucesso.");
+>>>>>>> 04bb56b38ca4304d506d84b5efc8e4f2aa071955
     switchPage("aluno");
 }
 
@@ -57,6 +61,10 @@ function loginGremio() {
 
     // Sucesso
     console.log("Membro do Grêmio autenticado:", { nome, matricula, curso, serie, cargo });
+<<<<<<< HEAD
     alert('Bem-vindo, ${cargo} ${nome}! Login do Grêmio realizado com sucesso.');
+=======
+    alert("Bem-vindo, ${cargo} ${nome}! Login do Grêmio realizado com sucesso.");
+>>>>>>> 04bb56b38ca4304d506d84b5efc8e4f2aa071955
     switchPage("gremio");
 }
