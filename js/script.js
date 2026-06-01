@@ -28,7 +28,7 @@ function loginAluno() {
 
     // Sucesso
     console.log("Aluno autenticado:", { nome, matricula, curso, serie });
-    alert(Olá, ${nome}! Login de Aluno realizado com sucesso.);
+    alert('Olá, ${nome}! Login de Aluno realizado com sucesso.');
     switchPage("aluno");
 }
 
@@ -57,6 +57,6 @@ function loginGremio() {
 
     // Sucesso
     console.log("Membro do Grêmio autenticado:", { nome, matricula, curso, serie, cargo });
-    alert(Bem-vindo, ${cargo} ${nome}! Login do Grêmio realizado com sucesso.);
+    alert('Bem-vindo, ${cargo} ${nome}! Login do Grêmio realizado com sucesso.');
     switchPage("gremio");
 }
