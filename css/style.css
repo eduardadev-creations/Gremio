@@ -1,33 +1,35 @@
-<<<<<<< HEAD
 
  /*Paginas gerais(exceto cadastro)*/
 
-=======
->>>>>>> 04bb56b38ca4304d506d84b5efc8e4f2aa071955
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
 
-header{
-    /*nada...*/
+.cabecalho{
+    background: linear-gradient(to bottom, #fae170, #ffeb93);
+    padding: 20px;
 }
 
 nav{
-    background-color: rgb(255, 239, 147);
-    flex-wrap: wrap;
+    color: rgb(255, 217, 0);
     display:flex;
-    font-family:/*nada*/10px;
+    gap:20px;
 
 }
 
-nav a hover{
+nav a{
     text-decoration: none;
-    color: black;
-    padding: 20px;
+    color: rgb(22, 22, 22);
     font-size: 20px;
+    display: flex;
+}
+nav a:hover{
+    text-decoration: none;
+    color: rgb(255, 253, 108);
+    font-size: 20px;
+    animation: pulse 1s infinite;
 }
 
 div{
@@ -52,17 +54,93 @@ h3{
     border-radius: 10px;
 }
 /*Página da Agenda*/
+
 /*Página das Informações*/
 /*Página da Midia*/
 /*Página dos Eventos*/
-=======
- header {
-    font-size:10px;
- }
 
-nav{
-    background-color: rgb(255, 239, 147);
-    display:flex;
 
+
+
+/*Administração de midias*/
+/* Seção principal */
+#admMidia{
+    max-width:900px;
+    margin:0 auto;
+    padding:30px;
 }
->>>>>>> 04bb56b38ca4304d506d84b5efc8e4f2aa071955
+
+/* Cabeçalho */
+#admMidia header{
+    margin-bottom:30px;
+}
+
+#admMidia h2{
+    margin-bottom:10px;
+}
+
+#admMidia p{
+    margin:0;
+}
+
+/* Container */
+.form-container{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.form-container h4{
+    margin-bottom:10px;
+}
+
+/* Formulário */
+.form-container form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* Campos */
+.campo{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+/* Labels */
+.campo label{
+    font-weight:600;
+}
+
+/* Inputs */
+.campo input[type="text"]{
+    padding:10px;
+}
+
+.campo input[type="file"]{
+    padding:5px 0;
+}
+
+/* Botões */
+.campo button{
+    width:fit-content;
+    padding:8px 16px;
+    cursor:pointer;
+}
+
+/* Responsividade */
+@media(max-width:768px){
+    #admMidia{
+        padding:20px;
+    }
+
+    .campo button{
+        width:100%;
+    }
+}
+
+
+/*Administração de informacões*/
+/*Administração de eventos*/
+/*Administração da agenda*/

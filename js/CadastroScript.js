@@ -41,7 +41,7 @@ function cadastroAluno() {
     usuariosCadastrados.push(novoAluno);
     localStorage.setItem('usuarios', JSON.stringify(usuariosCadastrados));
 
-    alert('Aluno ' + nome + ' cadastrado com sucesso! Redirecionando para o login...');
+    alert(`Aluno  + '${nome}' + ' cadastrado com sucesso! Redirecionando para o login...'`);
 
     // REDIRECIONA AUTOMATICAMENTE PARA A TELA DE LOGIN
     window.location.href = "loginAluno.html";
@@ -85,7 +85,7 @@ function cadastroGremio() {
     usuariosCadastrados.push(novoMembro);
     localStorage.setItem('usuarios', JSON.stringify(usuariosCadastrados));
 
-    alert('Membro do Grêmio (${cargo} ${nome}) cadastrado com sucesso!');
+    alert(`Membro do Grêmio (${cargo} ${nome}) cadastrado com sucesso!`);
     limparCampos(['nomeCompleto', 'matricula', 'curso', 'serie', 'cargo']);
 }
 
