@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Controle do gremio</title>
+</head>
+<body>
+    <section id="admAgenda">
+        <div class="container">
+            <!--Quadra-->
+            <div class="campo">
+                <label for="eventoQuadra">Evento na Quadra:</label>
+                <input type="date" id="eventoQuadra" name="eventoQuadra" placeholder="Data do evento">
+                <input type="text" id="eventoQuadra" name="eventoQuadra" placeholder="Descrição do evento">
+
+            </div>
+            <!--Jogos-->
+            <div class="jogos">
+                <h4>Jogos:</h4>
+                <label for="time1">Time 1:</label>
+                <input type="text" id="time1" name="time1" placeholder="Nome do time 1">
+                <input type="file" id="image1" name="image1" accept="image/*">
+                <label for="time2">Time 2:</label>
+                <input type="text" id="time2" name="time2" placeholder="Nome do time 2">
+                <input type="file" id="image2" name="image2" accept="image/*">
+                <button type="submit">Salvar Jogo</button>
+            </div>
+
+            <!--Musica-->
+            <div class="musica">
+                <h4>Música:</h4>
+                <label for="fotoMusica">Música escolhida:</label>
+                <input type="file" id="fotoMusica" name="fotoMusica" accept="image/*">
+                <input type="text" id="nomeMusica" name="nomeMusica" placeholder="Nome da música">
+                <input type="text" id="nomeMusica" name="nomeMusica" placeholder="Nome da música">
+
+                <button type="submit">Salvar Música</button>
+            </div>
+
+            <button type="button" onclick="window.location='/html/controleGremio.html'">Voltar</button>
+
+        </div>
+    </section>
+</body>
+</html>
