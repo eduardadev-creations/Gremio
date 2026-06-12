@@ -7,16 +7,26 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 253, 249);
+}
 .cabecalho{
-    background: linear-gradient(to bottom, #fae170, #ffeb93);
+    background: linear-gradient(to bottom, #ffe263,rgb(250, 212, 0), #fdeea8);
     padding: 20px;
+    font-family: ;
+    color:rgb(255, 236, 201);
 }
 
 nav{
     color: rgb(255, 217, 0);
+    margin-bottom: 40px;
+
+}
+
+ul{
     display:flex;
     gap:20px;
-
 }
 
 nav a{
@@ -53,6 +63,13 @@ h3{
     border-radius: 10px;
 }
 /*Página da Agenda*/
+
+.banner-agenda{
+    background: linear-gradient(to bottom, #ffe263,rgb(250, 212, 0), #fdeea8);
+    padding: 20px;
+    color:rgb(255, 236, 201);
+    text-align: center;
+}
 
 /*Página das Informações*/
 /*Página da Midia*/

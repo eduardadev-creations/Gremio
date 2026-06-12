@@ -41,9 +41,9 @@ function cadastroAluno() {
     usuariosCadastrados.push(novoAluno);
     localStorage.setItem('usuarios', JSON.stringify(usuariosCadastrados));
 
-    alert(`Aluno  + '${nome}' + ' cadastrado com sucesso! Redirecionando para o login...'`);
-
-    // REDIRECIONA AUTOMATICAMENTE PARA A TELA DE LOGIN
+    alert(Aluno ${nome} cadastrado com sucesso! Redirecionando para o login...);
+    
+// REDIRECIONA AUTOMATICAMENTE PARA A TELA DE LOGIN
     window.location.href = "loginAluno.html";
     
     limparCampos(['nomeCompleto', 'matricula', 'curso', 'serie']);
@@ -85,7 +85,7 @@ function cadastroGremio() {
     usuariosCadastrados.push(novoMembro);
     localStorage.setItem('usuarios', JSON.stringify(usuariosCadastrados));
 
-    alert(`Membro do Grêmio (${cargo} ${nome}) cadastrado com sucesso!`);
+    alert(Membro do Grêmio (${cargo} ${nome}) cadastrado com sucesso!);
     limparCampos(['nomeCompleto', 'matricula', 'curso', 'serie', 'cargo']);
 }
 
@@ -107,7 +107,7 @@ function loginAluno() {
     );
 
     if (alunoEncontrado) {
-        alert('Olá, ${alunoEncontrado.nome}! Login realizado com sucesso.');
+        alert(`Olá, ${alunoEncontrado.nome}! Login realizado com sucesso.`);
     } else {
         alert("Aluno não encontrado! Você já realizou o seu cadastro?");
     }
@@ -128,7 +128,7 @@ function loginGremio() {
     );
 
     if (membroEncontrado) {
-        alert('Bem-vindo, ' + membroEncontrado.cargo + ' ' + membroEncontrado.nome + '!');
+        alert(`Bem-vindo, ${membroEncontrado.cargo} ${membroEncontrado.nome}!`);
     } else {
         alert("Membro do Grêmio não encontrado! Verifique os dados ou cadastre-se.");
     }
