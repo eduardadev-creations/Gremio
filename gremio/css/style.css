@@ -1,0 +1,208 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff3c8ea;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    color: #ffcc00;
+}
+
+/* Cabeçalho */
+.cabecalho h1 {
+    font-size: 1.4rem;
+    color: #ffcc00;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Menu de navegação */
+nav {
+    margin-bottom: 40px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.35);
+    padding: 12px 25px;
+    border-radius: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #fcc600;
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #facb32ea;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #ffd230;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: #ffcb0f;
+    text-transform: uppercase;
+}
+
+/* Parágrafos */
+p {
+    font-size: 0.95rem;
+    color: #ffcc00;
+}
+
+/*Seções*/
+section{
+    width: 100%;
+    padding: 50px;
+    margin: 0 auto;
+
+    
+}
+
+/* Divs gerais */
+div {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: #ffcc00 1px solid;
+    gap:20px;
+}
+
+/* Links */
+div a {
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 15px; 
+    margin-bottom : 10px;
+    border:#ff9900 1px solid;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.playlist{
+    background-color: #02e420;
+    color:white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px ;
+    margin-bottom: 10px;
+    margin-top: 10px ;
+}
+
+.playlist:hover{
+    padding:16px;
+
+}
+/* Botões */
+button,
+.btnLogin,
+.btnDescricao,
+.btnEnviar {
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover,
+.btnLogin:hover,
+.btnDescricao:hover,
+.btnEnviar:hover {
+    background: #fcc600;
+    transform: scale(1.03);
+}
+
+.btnDescricao{
+    align-items: end;
+}
+/* Banner secundário */
+#inicio + header + div h2 {
+    color: #ffcc00;
+}
+
+#inicio + header + div p {
+    color: #facb32ea;
+}
+
+/* Links da área de informação */
+.informacao-principal a {
+    color: #fcc600;
+}
+
+/* Imagens dos membros */
+.membro {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background: #fff;
+    object-fit: cover;
+}
+
+/* Cards de descrição */
+.desc {
+    background: #ffe279ea;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Caixas da agenda */
+.calendario,
+.escalacaoQuadro,
+.regras {
+    background: #ffe279ea;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+/* Lista de regras */
+.regras li {
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}

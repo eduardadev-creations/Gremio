@@ -1,0 +1,78 @@
+
+/* Reset e layout geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e5ec; /* COR DE FORA (Ex: um cinza azulado moderno) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;         /* Centraliza o card verticalmente na tela */
+}
+.container-login {
+    background-color: rgb(255, 255, 255); /* Fundo branco para destacar os elementos */
+    padding: 24px;
+    border-radius: 12px;       /* Bordas mais arredondadas e modernas */
+    box-shadow: 10px 50px 60px rgba(0, 0, 0, 0.466); /* Sombra suave e elegante */
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px; /* Ajustado o espaçamento para melhor leitura */
+    font-weight: bold;
+    color: #333333;     /* Um tom ligeiramente mais suave que o preto puro */
+}
+
+/* Inputs de texto / seletores */   
+#nomeCompleto, #matricula, #curso, #serie, #cargo {
+    width: 100%;        /* Mudado para 100% para alinhar perfeitamente com o botão */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Botão de ação */
+button {
+    background-color: rgb(255, 221, 27);
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;     /* Cor sólida para garantir o contraste e leitura */
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;   /* Margem para não colar no último input */
+    cursor: pointer;    /* Muda o cursor para a "mãozinha" ao passar o mouse */
+    transition: background 0.2s ease;
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    background-color: rgb(224, 183, 0);
+}
+
+#saida {
+    font-size: 15px;
+    margin-top: 20px;
+}
+a {
+    color: rgb(0, 0, 0);    /* Coloca a cor que você quiser (usei o roxo do seu botão) */
+    text-decoration: none;    /* Remove o traço sublinhado */
+    font-weight: bold;      /* Deixa o link em negrito para destacar */
+    display: block;         /* Faz o link ocupar toda a largura disponível */
+}
+a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse para indicar que é clicável */
+}
